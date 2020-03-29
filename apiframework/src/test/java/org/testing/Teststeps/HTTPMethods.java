@@ -28,13 +28,14 @@ public class HTTPMethods
 	return res;
 }
 	
-	public Response GetRequest(String urikey)
+	public Response GetRequest(String urikey, String idvalue)
 	{
+		String uri=pr.getProperty(urikey)+"/"+idvalue;
 		Response res=
 		given()
 		.contentType(ContentType.JSON)
 		.when()
-		.get(pr.getProperty(urikey));
+		.get(uri);
 		
 		return res;
 	}

@@ -12,6 +12,6 @@ public class TC2GetData
 	{
 		Properties pr=PropertiesFileLoad.propertiesFile("..../apiframework/Env.properties");
 		HTTPMethods http=new HTTPMethods(pr);
-		http.GetRequest(TC1PostData.idvalue);
+		http.GetRequest("QA_URI",TC1PostData.idvalue);
 	}
 }

@@ -16,11 +16,11 @@ public class TC1PostData
 {
 	static String idvalue;
 	
-public static void main(String[] args) throws IOException 
+public void testcase1() throws IOException
 {
 	JSONObject data=new JSONObject();
 	data.put("Firstname","Akshmittal");
-	data.put("id","Akshimittal2");
+	data.put("id","Akshimittal3");
 		
 	Properties pr=PropertiesFileLoad.propertiesFile("../apiframework/Env.properties");
 	HTTPMethods http=new HTTPMethods(pr);
