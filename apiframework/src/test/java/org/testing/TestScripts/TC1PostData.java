@@ -20,7 +20,7 @@ public void testcase1() throws IOException
 {
 	JSONObject data=new JSONObject();
 	data.put("Firstname","Akshmittal");
-	data.put("id","Akshimittal3");
+	data.put("id","Akshimittal6");
 		
 	Properties pr=PropertiesFileLoad.propertiesFile("../apiframework/Env.properties");
 	HTTPMethods http=new HTTPMethods(pr);
